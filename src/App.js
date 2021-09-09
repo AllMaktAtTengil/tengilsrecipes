@@ -1,15 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import "./App.css";
+import Header from "./component/Header.jsx";
+import MainContent from "./component/MainContent.jsx";
+import Footer from "./component/Footer.jsx";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        
-        
-      </header>
-    </div>
-  );
+export default class App extends Component {
+    render() {
+        return (
+            <>
+                <div className="App">
+                    <Header />
+                    <MainContent />
+                    <Footer />
+                </div>
+            </>
+        );
+    }
 }
-
-export default App;
