@@ -2,128 +2,133 @@
 @import url("https://fonts.googleapis.com/css2?family=Allison&family=Barlow+Condensed:wght@100&family=WindSong&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 html {
-    font-family: "Barlow Condensed", sans-serif;
-    font-family: "Allison", cursive;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Allison", cursive;
+}
+
+*:focus {
+  outline: none;
 }
 
 body {
-    max-width: 1440px;
-    margin: auto;
-    background-color: #fff;
+  max-width: 1440px;
+  margin: auto;
+  background-color: #fff;
 }
 
 .header {
-    padding-top: 3rem;
-    height: 110px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header .top-logo {
-    display: inline;
+  padding-top: 3rem;
+  height: 110px;
+  display: flex;
 }
 
 .header .top-logo h1 {
-    font-family: "WindSong", cursive;
-    margin-left: 2rem;
-    font-size: 3rem;
+  font-family: "WindSong", cursive;
+  margin-left: 2rem;
+  font-size: 3rem;
 }
 
 .header .top-logo h2 {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2rem;
+}
+
+.top-logo {
+  padding-left: 40px;
 }
 
 .menu-wrapper {
-    padding-top: 10px;
-}
-
-.menu-wrapper .menu-nav {
-    margin-right: 15rem;
+  padding-left: 15%;
+  margin: auto;
 }
 
 .menu-nav ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .menu-nav li {
-    display: inline;
-    padding: 5%;
+  padding: 3%;
 }
 
 .menu-nav li a {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Barlow Condensed", sans-serif;
-    text-decoration: none;
-    color: rgb(4, 7, 6);
-    text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  color: rgb(4, 7, 6);
+  text-transform: uppercase;
 }
 
 .menu-nav li a:hover {
-    color: lightgray;
+  color: lightgray;
 }
 
 .search-field {
-    border: 1px solid grey;
-    border-radius: 5px;
-    height: 20px;
-    width: 100%;
-    padding: 6px 50px 6px 50px;
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 20px;
+  width: 100%;
+  padding: 6px 50px 6px 50px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
+  margin-right: 20%;
+}
+
+.search-field:focus::placeholder {
+  opacity: 50%;
 }
 
 .footer {
-    height: 200px;
-    background-color: rgb(28, 129, 90);
+  height: 200px;
+  background-color: rgb(28, 129, 90);
 }
 
 .container .footer-block {
-    background-color: #aaecd6;
-    min-height: 190px;
-    border-radius: 5px;
-    font-size: 12px;
+  background-color: #aaecd6;
+  min-height: 190px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .container .footer-block h6 {
-    font-size: 1.2rem;
-    font-family: "WindSong", cursive;
+  font-size: 1.2rem;
+  font-family: "WindSong", cursive;
 }
 
 .container .footer-block a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .container .footer-copyright {
-    text-align: center;
+  text-align: center;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
-    padding: 5rem 10rem 10rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  padding: 5rem 10rem 10rem 5rem;
 }
 
 .maincontent {
-    height: 500px;
-    background-color: rgb(255, 255, 255);
-    font-family: "Barlow Condensed", sans-serif;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .maincontent .container {
-    margin: 2rem 5rem 2rem 5rem;
-    color: green;
+  margin: 2rem 5rem 2rem 5rem;
+  color: green;
 }
