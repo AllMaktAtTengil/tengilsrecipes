@@ -3,15 +3,17 @@ import { Component } from "react";
 import "../App.css";
 
 class MainContent extends Component {
-  render() {
-    return (
-      <>
-        <div className="maincontent">
-          <h1>Header</h1>
-        </div>
-      </>
-    );
-  }
+    render() {
+        return (
+            <>
+                <div className="maincontent">
+                    <div className="container">
+                        <h1>Header</h1>
+                    </div>
+                </div>
+            </>
+        );
+    }
 }
 
 export default MainContent;
