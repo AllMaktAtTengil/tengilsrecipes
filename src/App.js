@@ -16,11 +16,19 @@ export default class App extends Component {
     console.log(recipes);
   }
 
+  searchRecipe = async (recipe) => {
+    const recipes = await RecipeService.getRecipeByIndex(recipe);
+    this.setState({
+      recipes: recipes
+    });
+    console.log(recipes);
+  };
+
   render() {
     return (
       <>
         <div className="App">
-          <Header parentFetch={this.getRecipes} />
+          <Header parentFetch={this.searchRecipe} />
           <MainContent />
           <Footer />
         </div>

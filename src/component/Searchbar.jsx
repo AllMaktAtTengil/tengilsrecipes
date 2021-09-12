@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import RecipeService from "../service/RecipeService";
+import "../App.css";
 
 class Searchbar extends Component {
-  state = { value: "", recipes: undefined };
+  state = { value: "" };
 
   handleChange = (e) => {
     this.setState({
@@ -11,11 +11,8 @@ class Searchbar extends Component {
   };
 
   handleSubmit = async (e) => {
-    const recipes = await RecipeService.getRecipeByIndex(this.state.value);
-    this.setState({ recipes: recipes });
+    this.props.multiParentFetch(this.state.value);
     e.preventDefault();
-
-    //this.props.multiParentFetch(this.state.value);
   };
 
   render() {
