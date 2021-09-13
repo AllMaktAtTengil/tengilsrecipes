@@ -1,7 +1,6 @@
 class RecipeService {
-
     getAll = async () => {
-        const apikey = process.env.REACT_APP_APIKEY
+        const apikey = process.env.REACT_APP_APIKEY;
 
         try {
             const apiCall = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=${apikey}`);
@@ -10,10 +9,10 @@ class RecipeService {
         } catch (error) {
             alert(error);
         }
-    }
+    };
 
     getRecipeByIndex = async (index) => {
-        const apikey = process.env.REACT_APP_APIKEY
+        const apikey = process.env.REACT_APP_APIKEY;
         try {
             if (!index) {
             } else {
@@ -24,10 +23,10 @@ class RecipeService {
         } catch (error) {
             alert(error);
         }
-    }
+    };
 
     getRecipeById = async (id) => {
-        const apikey = process.env.REACT_APP_APIKEY
+        const apikey = process.env.REACT_APP_APIKEY;
         try {
             if (!id) {
             } else {
@@ -38,6 +37,6 @@ class RecipeService {
         } catch (error) {
             alert(error);
         }
-    }
+    };
 }
 export default new RecipeService();

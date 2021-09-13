@@ -2,132 +2,181 @@
 @import url("https://fonts.googleapis.com/css2?family=Allison&family=Barlow+Condensed:wght@100&family=WindSong&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 html {
-  font-family: "Barlow Condensed", sans-serif;
-  font-family: "Allison", cursive;
+    font-family: "Barlow Condensed", sans-serif;
+    font-family: "Allison", cursive;
 }
 
 *:focus {
-  outline: none;
+    outline: none;
 }
 
 body {
-  max-width: 1440px;
-  margin: auto;
-  background-color: #fff;
+    max-width: 1440px;
+    margin: auto;
+    background-color: #fff;
 }
 
 .header {
-  padding-top: 3rem;
-  height: 110px;
-  display: flex;
+    padding-top: 3rem;
+    height: 110px;
+    display: flex;
 }
 
 .header .top-logo h1 {
-  font-family: "WindSong", cursive;
-  margin-left: 2rem;
-  font-size: 3rem;
+    font-family: "WindSong", cursive;
+    margin-left: 2rem;
+    font-size: 3rem;
 }
 
 .header .top-logo h2 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2rem;
 }
 
 .top-logo {
-  padding-left: 40px;
+    padding-left: 40px;
 }
 
 .menu-wrapper {
-  padding-left: 15%;
-  margin: auto;
+    padding-left: 15%;
+    margin: auto;
 }
 
 .menu-nav ul {
-  list-style-type: none;
-  display: flex;
+    list-style-type: none;
+    display: flex;
 }
 
 .menu-nav li {
-  padding: 3%;
+    padding: 3%;
 }
 
 .menu-nav li a {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Barlow Condensed", sans-serif;
-  text-decoration: none;
-  color: rgb(4, 7, 6);
-  text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Barlow Condensed", sans-serif;
+    text-decoration: none;
+    color: rgb(4, 7, 6);
+    text-transform: uppercase;
 }
 
 .menu-nav li a:hover {
-  color: lightgray;
+    color: lightgray;
 }
 
 .search-field {
-  border: 1px solid grey;
-  border-radius: 5px;
-  height: 20px;
-  width: 100%;
-  padding: 6px 50px 6px 50px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  text-align: left;
-  margin-right: 20%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    padding: 6px 50px 6px 50px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-right: 20%;
 }
 
 .search-field:focus::placeholder {
-  opacity: 50%;
+    opacity: 50%;
 }
 
 .footer {
-  height: 200px;
-  background-color: rgb(28, 129, 90);
+    height: 200px;
+    background-color: rgb(28, 129, 90);
 }
 
 .container .footer-block {
-  background-color: #aaecd6;
-  min-height: 190px;
-  border-radius: 5px;
-  font-size: 12px;
+    background-color: #aaecd6;
+    min-height: 190px;
+    border-radius: 5px;
+    font-size: 12px;
 }
 
 .container .footer-block h6 {
-  font-size: 1.2rem;
-  font-family: "WindSong", cursive;
+    font-size: 1.2rem;
+    font-family: "WindSong", cursive;
 }
 
 .container .footer-block a {
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 .container .footer-copyright {
-  text-align: center;
+    text-align: center;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 50px;
-  grid-row-gap: 0px;
-  padding: 5rem 10rem 10rem 5rem;
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    padding: 5rem 10rem 10rem 5rem;
 }
 
 .maincontent {
-  height: 500px;
-  background-color: rgb(255, 255, 255);
-  font-family: "Barlow Condensed", sans-serif;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 .maincontent .container {
-  color: green;
+    margin: 2rem 5rem 2rem 5rem;
+    color: green;
+}
+
+.rand-recipes h1 {
+    color: black;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.rand-recipes img {
+    display: block;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dish-info {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rand-recipes h4,
+p {
+    padding-top: 0.5rem;
+    text-align: right;
+    color: rgb(9, 77, 51);
+    display: inline;
+    vertical-align: top;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 20px;
+    padding: 5rem 10rem 10rem 5rem;
+    grid-template-columns: 50% 50%;
+}
+
+hr {
+    margin-top: 2rem;
+    border-top: 1px grey;
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
