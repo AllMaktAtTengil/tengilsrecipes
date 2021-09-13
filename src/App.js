@@ -13,7 +13,6 @@ export default class App extends Component {
     this.setState({
       recipes: recipes,
     });
-    console.log(recipes);
   }
 
   searchRecipe = async (recipe) => {
@@ -21,7 +20,6 @@ export default class App extends Component {
     this.setState({
       recipes: recipes
     });
-    console.log(recipes);
   };
 
   render() {
@@ -29,7 +27,9 @@ export default class App extends Component {
       <>
         <div className="App">
           <Header parentFetch={this.searchRecipe} />
-          <MainContent />
+          {this.state.recipes && (
+            <MainContent data={this.state.recipes} />
+          )}
           <Footer />
         </div>
       </>

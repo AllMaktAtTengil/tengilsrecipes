@@ -4,7 +4,7 @@ class RecipeService {
         const apikey = process.env.REACT_APP_APIKEY
 
         try {
-            const apiCall = await fetch(`https://api.spoonacular.com/recipes/complexSearch?number=100&apiKey=${apikey}`);
+            const apiCall = await fetch(`https://api.spoonacular.com/recipes/random?number=10&apiKey=${apikey}`);
             const data = await apiCall.json();
             return data;
         } catch (error) {
@@ -18,6 +18,20 @@ class RecipeService {
             if (!index) {
             } else {
                 const apiCall = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${index}&number=100&apiKey=${apikey}`);
+                const data = await apiCall.json();
+                return data;
+            }
+        } catch (error) {
+            alert(error);
+        }
+    }
+
+    getRecipeById = async (id) => {
+        const apikey = process.env.REACT_APP_APIKEY
+        try {
+            if (!id) {
+            } else {
+                const apiCall = await fetch(`https://api.spoonacular.com/recipes/${id}/information?number=1&apiKey=${apikey}`);
                 const data = await apiCall.json();
                 return data;
             }
