@@ -1,8 +1,8 @@
 import React from "react";
 import { Component } from "react";
 import "../App.css";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
+import { AiOutlineInstagram, AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
 
 class Footer extends Component {
     render() {
@@ -26,41 +26,60 @@ class Footer extends Component {
                                 <br />
                             </div>
                             <div className="grid-2">
-                                <h6>Customer Service</h6>
+                                <h6>About Us</h6>
                                 <hr />
                                 <span className="footer-social-icon"></span>{" "}
                                 <a href="#FAQ" className="footer-link">
-                                    Frequently Asked Questions
+                                    Team
                                 </a>
                                 <br />
                                 <span className="footer-social-icon"></span>{" "}
                                 <a href="#contactus" className="footer-link">
-                                    Contact Us
+                                    Our vision
                                 </a>
                             </div>
                             <div className="grid-3">
-                                <h6>Socialize with us</h6>
+                                <h6>Customer Service</h6>
                                 <hr />
-                                <span className="footer-social-icon"></span> <FaFacebookF />
+                                <span className="footer-social-icon"></span>{" "}
+                                <a href="#FAQ" className="footer-link">
+                                    Contact Us{" "}
+                                </a>
+                                <br />
+                                <span className="footer-social-icon"></span>{" "}
+                                <a href="#contactus" className="footer-link">
+                                    Frequently Asked Questions
+                                </a>
+                            </div>
+                        </div>
+                        <div className="Social-footer">
+                            <h6>Socialize with us</h6>
+                            <div className="social-footer-2">
+                                <span className="footer-social-icon"></span>
                                 <a href="#facebook" className="footer-link">
-                                    Facebook
+                                    <FaFacebook />
                                 </a>
                                 <br />
-                                <span className="footer-social-icon"></span> <AiOutlineInstagram />
+                                <span className="footer-social-icon"></span>
                                 <a href="#instagram" className="footer-link">
-                                    Instagram
+                                    <AiOutlineInstagram />
                                 </a>
                                 <br />
-                                <span className="footer-social-icon"></span> <FaTwitter />
+                                <span className="footer-social-icon"></span>
                                 <a href="#twitter" className="footer-link">
-                                    Twitter
+                                    <AiFillTwitterCircle />
+                                </a>
+                                <br />
+                                <span className="footer-social-icon"></span>
+                                <a href="#twitter" className="footer-link">
+                                    <AiFillGithub />
                                 </a>
                                 <br />
                             </div>
-                            <div className="col-auto float-right"></div>
                         </div>
+
+                        <div className="footer-copyright">&copy; &reg; 2021 Copyright. All rights reserved.</div>
                     </div>
-                    <div className="footer-copyright">&copy; &reg; 2021 Copyright. All rights reserved.</div>
                 </div>
             </div>
         );

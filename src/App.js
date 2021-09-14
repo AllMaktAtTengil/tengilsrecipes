@@ -6,34 +6,33 @@ import Footer from "./component/Footer.jsx";
 import RecipeService from "./service/RecipeService";
 
 export default class App extends Component {
-  state = { recipes: undefined };
+    state = { recipes: undefined };
 
-  async componentDidMount() {
-    const recipes = await RecipeService.getAll();
-    this.setState({
-      recipes: recipes,
-    });
-  }
+    async componentDidMount() {
+        const recipes = await RecipeService.getAll();
+        this.setState({
+            recipes: recipes,
+        });
+    }
 
-  searchRecipe = async (recipe) => {
-    const recipes = await RecipeService.getRecipeByIndex(recipe);
-    this.setState({
-      recipes: recipes,
-    });
-  };
+    searchRecipe = async (recipe) => {
+        const recipes = await RecipeService.getRecipeByIndex(recipe);
+        this.setState({
+            recipes: recipes,
+        });
+    };
 
-  render() {
+    render() {
+        return (
+            <>
+                <div className="App">
+                    <Header parentFetch={this.searchRecipe} />
 
-    return (
-      <>
-        <div className="App">
-          <Header parentFetch={this.searchRecipe} />
+                    {this.state.recipes && <MainContent data={this.state.recipes} />}
 
-          {this.state.recipes && <MainContent data={this.state.recipes} />}
-
-          <Footer />
-        </div>
-      </>
-    );
-  }
+                    <Footer />
+                </div>
+            </>
+        );
+    }
 }
