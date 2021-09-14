@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  max-width: 1440px;
+  width: 100%;
   margin: auto;
   background-color: #fff;
 }
@@ -24,7 +24,9 @@ body {
 .header {
   padding-top: 3rem;
   height: 110px;
+  margin: auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -46,7 +48,7 @@ body {
 }
 
 .top-logo {
-  padding-left: 40px;
+  margin: auto;
 }
 
 .menu-wrapper {
@@ -200,31 +202,23 @@ body {
   padding-bottom: 2rem;
   text-align: center;
 }
+
 .rand-recipes img {
   display: block;
   width: 350px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .dish-info {
   display: flex;
   flex-direction: row;
-  padding: 5px;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.dish-info p {
-  background-color: lightgray;
-  border-radius: 5px;
-  padding: 5px;
+.dish-info p,
+h4 {
   font-weight: bold;
-}
-
-.dish-info h4 {
-  background-color: lightgray;
-  border-radius: 5px;
-  padding: 5px;
+  margin: auto;
 }
 
 .rand-recipes h4,
@@ -250,7 +244,7 @@ p {
   margin-top: 2rem;
   border-top: 1px grey;
   display: block;
-  width: 400px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
