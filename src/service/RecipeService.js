@@ -16,7 +16,7 @@ class RecipeService {
         try {
             if (!index) {
             } else {
-                const apiCall = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${index}&number=100&apiKey=${apikey}`);
+                const apiCall = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${index}&addRecipeInformation=true&number=100&apiKey=${apikey}`);
                 const data = await apiCall.json();
                 return data;
             }
