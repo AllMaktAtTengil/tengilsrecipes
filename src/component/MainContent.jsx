@@ -9,6 +9,7 @@ import {
   AiFillLike,
 } from "react-icons/ai";
 import Slider from "./Slider";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class MainContent extends Component {
   state = { recipes: [] };
@@ -40,8 +41,12 @@ class MainContent extends Component {
                   recipes.recipes.map((recipes, index) => (
                     <div key={index}>
                       <div className="rand-recipes" id={`recipe-box-${index}`}>
-                        <h1>{recipes.title}</h1>
-                        <img src={recipes.image} alt="example" />
+                        <Router>
+                          <Link to="/recipe-information">
+                            <h1>{recipes.title}</h1>
+                            <img src={recipes.image} alt="Jpg not found!" />
+                          </Link>
+                        </Router>
                         <div className="dish-info">
                           <p>{recipes.readyInMinutes}Min</p>
                           <h4>
@@ -59,8 +64,12 @@ class MainContent extends Component {
                   recipes.results.map((recipes, index) => (
                     <div key={index}>
                       <div className="rand-recipes" id={`recipe-box-${index}`}>
-                        <h1>{recipes.title}</h1>
-                        <img src={recipes.image} alt="example" />
+                        <Router>
+                          <Link to="/recipe-information">
+                            <h1>{recipes.title}</h1>
+                            <img src={recipes.image} alt="Jpg not found!" />
+                          </Link>
+                        </Router>
                         <div className="dish-info">
                           <p>{recipes.readyInMinutes}Min</p>
                           <h4>
