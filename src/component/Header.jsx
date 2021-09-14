@@ -9,14 +9,18 @@ class Header extends Component {
       <>
         <div className="header">
           <div className="top-logo">
-            <h2>Tengil's</h2>
-            <h1>Recipes</h1>
+            <a href="http://localhost:3000/">
+              <h2>Tengil's</h2>
+              <h1>Recipes</h1>
+            </a>
           </div>
           <div className="menu-wrapper">
             <nav className="menu-nav">
               <ul>
                 <li>
-                  <a href="#home">Home</a>
+                  <a href="http://localhost:3000/" target="_self">
+                    Home
+                  </a>
                 </li>
                 <li>
                   <a href="#recipes">Recipes</a>
