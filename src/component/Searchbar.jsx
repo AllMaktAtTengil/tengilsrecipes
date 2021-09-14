@@ -23,7 +23,7 @@ class Searchbar extends Component {
           type="text"
           value={this.state.value}
           onChange={this.handleChange}
-          placeholder="Search recipe"
+          placeholder="Search"
         ></input>
       </form>
     );
