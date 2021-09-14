@@ -3,237 +3,296 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 html {
-    font-family: "Barlow Condensed", sans-serif;
-    font-family: "Allison", cursive;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Allison", cursive;
 }
 
 *:focus {
-    outline: none;
+  outline: none;
 }
 
 body {
-    max-width: 1440px;
-    margin: auto;
-    background-color: #fff;
+  max-width: 1440px;
+  margin: auto;
+  background-color: #fff;
 }
 
 .header {
-    padding-top: 3rem;
-    height: 110px;
-    display: flex;
+  padding-top: 3rem;
+  height: 110px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .top-logo a {
-    text-decoration: none;
-    list-style-type: none;
-    color: rgb(4, 7, 6);
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(4, 7, 6);
 }
 
 .header .top-logo h1 {
-    font-family: "WindSong", cursive;
-    margin-left: 2rem;
-    font-size: 3rem;
+  font-family: "WindSong", cursive;
+  margin-left: 2rem;
+  font-size: 3rem;
 }
 
 .header .top-logo h2 {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2rem;
 }
 
 .top-logo {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 .menu-wrapper {
-    padding-left: 15%;
-    margin: auto;
+  margin: auto;
+}
+
+.dropdown-btn {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  color: rgb(4, 7, 6);
+  text-transform: uppercase;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  outline: 0;
+}
+
+.dropdown-btn:hover {
+  color: lightgray;
+}
+
+.dropdown {
+  position: absolute;
+  top: 13%;
+  width: 120px;
+  z-index: 1;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
+
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  display: block;
+  padding: 8px 12px;
+}
+
+.dropdown li:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
+
+.dropdown a {
+  font-size: 20px !important;
 }
 
 .menu-nav ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .menu-nav li {
-    padding: 3%;
+  padding: 3%;
 }
 
 .menu-nav li a {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Barlow Condensed", sans-serif;
-    text-decoration: none;
-    color: rgb(4, 7, 6);
-    text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  color: rgb(4, 7, 6);
+  text-transform: uppercase;
 }
 
 .menu-nav li a:hover {
-    color: lightgray;
+  color: lightgray;
 }
 
 .search-field {
-    border: 1px solid grey;
-    border-radius: 5px;
-    height: 20px;
-    width: 100%;
-    padding: 6px 50px 6px 50px;
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-align: left;
-    margin-right: 20%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 20px;
+  width: 50%;
+  padding: 6px 50px 6px 50px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .search-field:focus::placeholder {
-    opacity: 50%;
+  opacity: 50%;
 }
 
 .footer {
-    height: 200px;
-    background-color: rgb(226, 238, 233);
+  height: 200px;
+  background-color: rgb(226, 238, 233);
 }
 
 .container .footer-block {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6w3kxqN2LbZIkX36RvLwZr6gGxSRjJRkDbQ&usqp=CAU);
-    background-size: cover;
-    min-height: 190px;
-    border-radius: 5px;
-    font-size: 12px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6w3kxqN2LbZIkX36RvLwZr6gGxSRjJRkDbQ&usqp=CAU);
+  background-size: cover;
+  min-height: 190px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .container .footer-block h6 {
-    font-size: 1.2rem;
-    font-family: "WindSong", cursive;
+  font-size: 1.2rem;
+  font-family: "WindSong", cursive;
 }
 
 .container .footer-block a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: rgb(55, 197, 233);
-    font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(55, 197, 233);
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .container .footer-copyright {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
-    padding: 5rem 5rem 5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  padding: 5rem 5rem 5rem 5rem;
+  margin: auto;
 }
 
 .maincontent {
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    font-family: "Barlow Condensed", sans-serif;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .maincontent .container {
-    margin: 2rem 5rem 2rem 5rem;
+  margin: auto;
 }
 
 .rand-recipes h1 {
-    color: black;
-    font-size: 1.2rem;
-    padding-bottom: 2rem;
-    text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 .rand-recipes img {
-    display: block;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dish-info {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+
+.dish-info p {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.dish-info h4 {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .rand-recipes h4,
 p {
-    padding-top: 0.5rem;
-    text-align: right;
-    color: rgb(4, 79, 109);
-    display: inline;
-    vertical-align: top;
+  padding-top: 0.5rem;
+  text-align: right;
+  color: rgb(4, 79, 109);
+  display: inline;
+  vertical-align: top;
 }
 
 .main-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 5fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 100px;
-    grid-row-gap: 20px;
-    padding: 5rem 10rem 10rem 5rem;
-    grid-template-columns: 50% 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 20px;
+  padding: 5rem 10rem 10rem 5rem;
+  grid-template-columns: 50% 50%;
 }
 
 .rand-recipes hr {
-    margin-top: 2rem;
-    border-top: 1px grey;
-    display: block;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 2rem;
+  border-top: 1px grey;
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Subscribe-divider {
-    height: 100px;
-    width: 60rem;
-    background-color: rgb(22, 127, 153);
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 5rem 1rem 5rem;
-
-    color: white;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(22, 127, 153);
+  display: flex;
+  justify-content: space-between;
+  color: white;
 }
 
 .Subscribe-divider h1 {
-    font-size: 1.7rem;
-    font-weight: 100;
-    font-family: "Permanent Marker", cursive;
+  font-size: 1.7rem;
+  font-weight: 100;
+  font-family: "Permanent Marker", cursive;
 }
 
 .Subscribe-divider .diver-icons {
-    color: white;
+  color: white;
 }
 
 .diver-icons {
-    size: 3rem;
+  size: 3rem;
 }
 
 .Social-footer {
-    text-align: center;
-    padding-bottom: 4rem;
+  text-align: center;
+  padding-bottom: 4rem;
 }
 
 .social-footer-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-block hr {
-    margin-top: 1rem;
-    border-top: 1px solid rgb(55, 197, 233);
-    border-bottom: 1px solid rgb(43, 154, 182);
-    display: block;
-    width: 300px;
-    margin-right: auto;
+  margin-top: 1rem;
+  border-top: 1px solid rgb(55, 197, 233);
+  border-bottom: 1px solid rgb(43, 154, 182);
+  display: block;
+  width: 100%;
+  margin-right: auto;
 }
 
 .footer-link {
-    padding-top: 1rem;
-    width: 3rem;
+  padding-top: 1rem;
+  width: 3rem;
 }

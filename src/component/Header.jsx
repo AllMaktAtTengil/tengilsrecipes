@@ -2,6 +2,7 @@ import React from "react";
 import { Component } from "react";
 import "../App.css";
 import Searchbar from "../component/Searchbar";
+import Dropdown from "./Dropdown";
 
 class Header extends Component {
   render() {
@@ -23,7 +24,7 @@ class Header extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#recipes">Recipes</a>
+                  <Dropdown />
                 </li>
                 <li>
                   <a href="#guides">Guides</a>
