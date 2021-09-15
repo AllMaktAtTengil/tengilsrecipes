@@ -9,7 +9,7 @@ import {
   AiFillLike,
 } from "react-icons/ai";
 import Slider from "./Slider";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class MainContent extends Component {
   state = { recipes: [] };
