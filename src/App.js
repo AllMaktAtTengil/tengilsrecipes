@@ -4,6 +4,8 @@ import Header from "./component/Header.jsx";
 import MainContent from "./component/MainContent.jsx";
 import Footer from "./component/Footer.jsx";
 import RecipeService from "./service/RecipeService";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import RecipeInformation from "./component/RecipeInformation";
 
 export default class App extends Component {
   state = { recipes: undefined };
@@ -24,15 +26,18 @@ export default class App extends Component {
 
   render() {
     return (
-      <>
+      <Router>
         <div className="App">
           <Header parentFetch={this.searchRecipe} />
 
-          {this.state.recipes && <MainContent data={this.state.recipes} />}
-
+          <Switch >
+            <Route path="/recipe-information/:1" component={RecipeInformation}></Route>
+            <Route path="/"> {this.state.recipes && <MainContent data={this.state.recipes} />} </Route>
+          </Switch>
           <Footer />
+
         </div>
-      </>
+      </Router>
     );
   }
 }
