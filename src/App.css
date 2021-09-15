@@ -211,6 +211,7 @@ body {
     display: block;
     width: 350px;
     margin: auto;
+    border-radius: 10px;
 }
 
 .rand-recipes h4,
@@ -278,6 +279,11 @@ h4 {
     size: 3rem;
 }
 
+.slider-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 .Social-footer {
     text-align: center;
     padding-bottom: 4rem;
@@ -301,4 +307,13 @@ h4 {
 .footer-link {
     padding-top: 1rem;
     width: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-grid {
+        grid-template-columns: 100%;
+    }
+    .menu-nav {
+        display: none;
+    }
 }

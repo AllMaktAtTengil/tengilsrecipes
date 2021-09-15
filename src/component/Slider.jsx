@@ -8,7 +8,7 @@ class Slider extends Component {
         let recipes = this.props.data;
         console.log(recipes);
         return (
-            <div>
+            <div className="slider-container">
                 <Splide
                     options={{
                         rewind: true,
