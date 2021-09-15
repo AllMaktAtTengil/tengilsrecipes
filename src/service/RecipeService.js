@@ -3,7 +3,7 @@ class RecipeService {
         const apikey = process.env.REACT_APP_APIKEY;
 
         try {
-            const apiCall = await fetch(`https://api.spoonacular.com/recipes/random?number=6&apiKey=${apikey}`);
+            const apiCall = await fetch(`https://api.spoonacular.com/recipes/random?number=12&apiKey=${apikey}`);
             const data = await apiCall.json();
             return data;
         } catch (error) {
