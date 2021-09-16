@@ -21,7 +21,7 @@ class RecipeInformation extends Component {
     return (
       <div className="single-container">
         <div className="single-recipe">
-          <div>
+          <div className="single-recipe-img">
             <img src={this.state.singleRecipe.image} alt="not found" />
           </div>
           <div className="single-recipe-container">

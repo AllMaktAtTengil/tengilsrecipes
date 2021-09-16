@@ -152,6 +152,82 @@ body {
   opacity: 50%;
 }
 
+.page-wrap {
+  padding-left: 100px;
+  text-align: left;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 46px;
+  height: 40px;
+  right: 4rem;
+  top: 3rem;
+  font-size: 0px !important;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+  font-size: 1px;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  font-size: 1px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: absolute;
+  height: 100%;
+  z-index: 10000000;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  z-index: 10000000;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .footer {
   height: 200px;
   background-color: rgb(226, 238, 233);
@@ -377,11 +453,77 @@ h4 {
   width: 3rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .menu-nav li a {
+    font-size: 20px;
+  }
+  .dropdown-btn {
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .main-grid {
     grid-template-columns: 100%;
   }
   .menu-nav {
     display: none;
+  }
+  .single-recipe {
+    flex-direction: column;
+  }
+  .single-recipe-img {
+    margin: auto;
+    width: 300px !important;
+    padding-bottom: 25px;
+  }
+
+  .single-recipe-container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .single-recipe-info-container {
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .bm-burger-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .rand-recipes img {
+    width: 250px;
+  }
+  .rand-recipes h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 712px) {
+  .footer-grid {
+    grid-template-columns: 100%;
+    padding: 2rem;
+    row-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .single-recipe-img {
+    width: 400px;
+  }
+  .single-recipe-img img {
+    width: 100%;
+  }
+
+  .single-recipe-container h1 {
+    max-width: 100%;
+  }
+  .single-recipe-container h1 {
+    font-size: 20px;
   }
 }
