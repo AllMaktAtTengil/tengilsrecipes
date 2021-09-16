@@ -19,26 +19,34 @@ class Hamburger extends Component {
           right
         >
           <main id="page-wrap" className="page-wrap">
-            <p>
-              <a id="home" className="menu-item" href="/">
-                Home
-              </a>
-            </p>
-            <p>
-              <a id="about" className="menu-item" href="/about">
-                About
-              </a>
-            </p>
-            <p>
-              <a id="contact" className="menu-item" href="/contact">
-                Contact us
-              </a>
-            </p>
-            <p>
-              <a id="info" className="menu-item" href="/information">
-                How it works
-              </a>
-            </p>
+            <div className="mobile-nav">
+              <p>
+                <a id="home" className="menu-item" href="/">
+                  Home
+                </a>
+              </p>
+            </div>
+            <div className="mobile-nav">
+              <p>
+                <a id="recipe" className="menu-item" href="/recipe">
+                  Recipes
+                </a>
+              </p>
+            </div>
+            <div className="mobile-nav">
+              <p>
+                <a id="guide" className="menu-item" href="/guide">
+                  Guides
+                </a>
+              </p>
+            </div>
+            <div className="mobile-nav">
+              <p>
+                <a id="contact" className="menu-item" href="/contact">
+                  Contact us
+                </a>
+              </p>
+            </div>
           </main>
         </Menu>
       </div>
