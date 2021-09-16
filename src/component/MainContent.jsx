@@ -1,15 +1,10 @@
 import React from "react";
 import { Component } from "react";
 import "../App.css";
-import { FaFacebook } from "react-icons/fa";
-import {
-  AiOutlineInstagram,
-  AiFillTwitterCircle,
-  AiFillGithub,
-  AiFillLike,
-} from "react-icons/ai";
+import { AiFillLike } from "react-icons/ai";
 import Slider from "./Slider";
 import { Link } from "react-router-dom";
+import Subscribe from "./Subscribe";
 
 class MainContent extends Component {
   state = { recipes: [] };
@@ -62,8 +57,10 @@ class MainContent extends Component {
                   recipes.results.map((recipes, index) => (
                     <div key={index}>
                       <div className="rand-recipes" id={`recipe-box-${index}`}>
-                        <h1>{recipes.title}</h1>
-                        <img src={recipes.image} alt="example" />
+                        <Link to={`/recipe-information/${recipes.id}`}>
+                          <h1>{recipes.title}</h1>
+                          <img src={recipes.image} alt="example" />
+                        </Link>
                         <div className="dish-info">
                           <p>{recipes.readyInMinutes}Min</p>
                           <h4>
@@ -78,26 +75,7 @@ class MainContent extends Component {
                     </div>
                   ))}
             </div>
-            <div className="Subscribe-divider">
-              <div>
-                <h1>Follow us</h1>{" "}
-                <a href="#instagram" className="diver-icons">
-                  <FaFacebook />
-                </a>
-                <a href="#instagram" className="diver-icons">
-                  <AiOutlineInstagram />
-                </a>
-                <a href="#instagram" className="diver-icons">
-                  <AiFillTwitterCircle />
-                </a>
-                <a href="#instagram" className="diver-icons">
-                  <AiFillGithub />
-                </a>
-              </div>
-              <div>
-                <h1>DO SOMETHING HERE!</h1>
-              </div>
-            </div>
+            <Subscribe />
             <div className="slider">
               {this.state.recipes && <Slider data={this.state.recipes} />}
             </div>

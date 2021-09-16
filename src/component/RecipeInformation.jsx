@@ -44,7 +44,7 @@ class RecipeInformation extends Component {
               </div>
             </div>
             <div className="single-recipe-link">
-              <a href={this.state.singleRecipe.sourceUrl} alt="_blanc">
+              <a href={this.state.singleRecipe.sourceUrl} target="_blanc">
                 See full recipe!
               </a>
             </div>
