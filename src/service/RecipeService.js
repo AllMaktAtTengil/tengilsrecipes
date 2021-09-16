@@ -1,4 +1,16 @@
 class RecipeService {
+    getRandomJoke = async () => {
+        const apikey = process.env.REACT_APP_APIKEY;
+
+        try {
+            const apiCall = await fetch(`https://api.spoonacular.com/food/jokes/random?apiKey=${apikey}`);
+            const data = apiCall.json();
+            return data;
+        } catch (error) {
+            alert(error);
+        }
+    };
+
     getAll = async () => {
         const apikey = process.env.REACT_APP_APIKEY;
 

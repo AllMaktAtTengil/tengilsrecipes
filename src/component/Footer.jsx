@@ -2,7 +2,8 @@ import React from "react";
 import { Component } from "react";
 import "../App.css";
 import { FaFacebook } from "react-icons/fa";
-import { AiOutlineInstagram, AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
+import { AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
+import { GrPinterest } from "react-icons/gr";
 
 class Footer extends Component {
     render() {
@@ -61,8 +62,8 @@ class Footer extends Component {
                                 </a>
                                 <br />
                                 <span className="footer-social-icon"></span>
-                                <a href="#instagram" className="footer-link">
-                                    <AiOutlineInstagram />
+                                <a href="https://github.com/AllMaktAtTengil/tengilsrecipes" target="_blank" className="footer-link">
+                                    <GrPinterest />
                                 </a>
                                 <br />
                                 <span className="footer-social-icon"></span>
