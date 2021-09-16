@@ -24,6 +24,13 @@ export default class App extends Component {
     });
   };
 
+  getCustomRecipe = async (recipe) => {
+    const recipes = await RecipeService.getRecipeByPopularity(recipe);
+    this.setState({
+      recipes: recipes,
+    });
+  }
+
   render() {
     return (
       <Router>

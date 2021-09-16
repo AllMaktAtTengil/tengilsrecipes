@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 class Dropdown extends Component {
   container = React.createRef();
@@ -46,7 +47,9 @@ class Dropdown extends Component {
             <div className="dropdown">
               <ul>
                 <li>
-                  <a href="#bestRating">Best rating</a>
+                  <Link to="/best-rating">
+                    <a href="#bestRating">Best rating</a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#Popular">Popular</a>

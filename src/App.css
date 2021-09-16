@@ -4,189 +4,189 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Varela+Round&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 html {
-    font-family: "Barlow Condensed", sans-serif;
-    font-family: "Allison", cursive;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Allison", cursive;
 }
 
 *:focus {
-    outline: none;
+  outline: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    width: 100%;
-    margin: auto;
-    background-color: #fff;
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
 }
 
 .header {
-    padding-top: 3rem;
-    height: 110px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  padding-top: 3rem;
+  height: 110px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .top-logo a {
-    text-decoration: none;
-    list-style-type: none;
-    color: rgb(4, 7, 6);
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(4, 7, 6);
 }
 
 .header .top-logo h1 {
-    font-family: "WindSong", cursive;
-    margin-left: 2rem;
-    font-size: 3rem;
+  font-family: "WindSong", cursive;
+  margin-left: 2rem;
+  font-size: 3rem;
 }
 
 .header .top-logo h2 {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2rem;
 }
 
 .top-logo {
-    margin: auto;
+  margin: auto;
 }
 
 .menu-wrapper {
-    margin: auto;
+  margin: auto;
 }
 
 .dropdown-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-btn {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Barlow Condensed", sans-serif;
-    text-decoration: none;
-    color: rgb(4, 7, 6);
-    text-transform: uppercase;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    outline: 0;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  color: rgb(4, 7, 6);
+  text-transform: uppercase;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  outline: 0;
 }
 
 .dropdown-btn:hover {
-    color: lightgray;
+  color: lightgray;
 }
 
 .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 120px;
-    z-index: 2;
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 120px;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
 }
 
 .dropdown ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .dropdown li {
-    display: block;
-    padding: 8px 12px;
+  display: block;
+  padding: 8px 12px;
 }
 
 .dropdown li:hover {
-    background-color: rgba(0, 0, 0, 0.14);
-    cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
 }
 
 .dropdown a {
-    font-size: 20px !important;
+  font-size: 20px !important;
 }
 
 .menu-nav ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .menu-nav li {
-    padding: 3%;
+  padding: 3%;
 }
 
 .menu-nav li a {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Barlow Condensed", sans-serif;
-    text-decoration: none;
-    color: rgb(4, 7, 6);
-    text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  color: rgb(4, 7, 6);
+  text-transform: uppercase;
 }
 
 .menu-nav li a:hover {
-    color: lightgray;
+  color: lightgray;
 }
 
 .search-field {
-    border: 1px solid grey;
-    border-radius: 5px;
-    height: 20px;
-    width: 50%;
-    padding: 6px 50px 6px 50px;
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-align: left;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 20px;
+  width: 50%;
+  padding: 6px 50px 6px 50px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .search-field:focus::placeholder {
-    opacity: 50%;
+  opacity: 50%;
 }
 
 .page-wrap {
-    padding-left: 100px;
-    text-align: left;
+  padding-left: 100px;
+  text-align: left;
 }
 
 .bm-burger-button {
-    position: fixed;
-    width: 46px;
-    height: 40px;
-    right: 4rem;
-    top: 3rem;
-    font-size: 0px !important;
+  position: fixed;
+  width: 46px;
+  height: 40px;
+  right: 4rem;
+  top: 3rem;
+  font-size: 0px !important;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-    background: #373a47;
-    font-size: 1px;
+  background: #373a47;
+  font-size: 1px;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-    background: #a90000;
+  background: #a90000;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
-    font-size: 1px;
+  height: 24px;
+  width: 24px;
+  font-size: 1px;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-    background: #bdc3c7;
+  background: #bdc3c7;
 }
 
 /*
@@ -194,389 +194,393 @@ Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
 .bm-menu-wrap {
-    position: absolute;
-    height: 100%;
-    z-index: 10000000;
+  position: absolute;
+  height: 100%;
+  z-index: 10000000;
 }
 
 /* General sidebar styles */
 .bm-menu {
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-    z-index: 10000000;
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  z-index: 10000000;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-    fill: #373a47;
+  fill: #373a47;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
+  color: #b8b7ad;
+  padding: 0.8em;
 }
 
 /* Individual item */
 .bm-item {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-    background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .joke-container {
-    text-align: center;
-    padding: 2rem 10rem 3rem 10rem;
+  text-align: center;
+  padding: 2rem 10rem 3rem 10rem;
 }
 
 .joke-container h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .joke-container h2 {
-    font-style: italic;
+  font-style: italic;
 }
 
 .footer {
-    height: 200px;
-    background-color: rgb(226, 238, 233);
+  height: 200px;
+  background-color: rgb(226, 238, 233);
 }
 
 .container .footer-block {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6w3kxqN2LbZIkX36RvLwZr6gGxSRjJRkDbQ&usqp=CAU);
-    background-size: cover;
-    min-height: 190px;
-    border-radius: 5px;
-    font-size: 12px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6w3kxqN2LbZIkX36RvLwZr6gGxSRjJRkDbQ&usqp=CAU);
+  background-size: cover;
+  min-height: 190px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .container .footer-block h6 {
-    font-size: 1.2rem;
-    font-family: "WindSong", cursive;
+  font-size: 1.2rem;
+  font-family: "WindSong", cursive;
 }
 
 .container .footer-block a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: rgb(55, 197, 233);
-    font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(55, 197, 233);
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .container .footer-copyright {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 0px;
-    padding: 5rem 5rem 5rem 5rem;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  padding: 5rem 5rem 5rem 5rem;
+  margin: auto;
 }
 
 .maincontent {
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    font-family: "Barlow Condensed", sans-serif;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .maincontent .container {
-    margin: auto;
+  margin: auto;
 }
 
 .rand-recipes {
-    width: 100%;
+  width: 100%;
 }
 
 .rand-recipes h1 {
-    color: black;
-    font-size: 1.2rem;
-    padding-bottom: 2rem;
-    text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 .rand-recipes img {
-    display: block;
-    width: 350px;
-    margin: auto;
-    border-radius: 10px;
+  display: block;
+  width: 350px;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .rand-recipes h4,
 p {
-    padding-top: 0.5rem;
-    text-align: right;
-    color: rgb(4, 79, 109);
-    display: inline;
-    vertical-align: top;
+  padding-top: 0.5rem;
+  text-align: right;
+  color: rgb(4, 79, 109);
+  display: inline;
+  vertical-align: top;
 }
 
 .rand-recipes hr {
-    margin-top: 2rem;
-    border-top: 1px grey;
-    display: block;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 2rem;
+  border-top: 1px grey;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dish-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .dish-info p,
 h4 {
-    font-weight: bold;
-    margin: auto;
+  font-weight: bold;
+  margin: auto;
 }
 
 .single-container {
-    margin: 3% 0 3% 0;
+  margin: 3% 0 3% 0;
 }
 
 .single-recipe {
-    justify-content: center;
-    display: flex;
+  justify-content: center;
+  display: flex;
 }
 
 .single-recipe img {
-    border-radius: 25px;
+  border-radius: 25px;
 }
 
 .single-recipe-container {
-    text-align: center;
-    max-width: 25%;
-    margin-left: 5%;
-    display: flex;
-    flex-direction: column;
-    color: rgb(4, 7, 6);
+  text-align: center;
+  max-width: 25%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(4, 7, 6);
 }
 
 .single-recipe-container h1 {
-    font-family: "Barlow Condensed", sans-serif;
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-    letter-spacing: 3px;
-    font-weight: 900;
-    text-decoration: underline;
-    margin-bottom: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-decoration: underline;
+  margin-bottom: 30px;
 }
 
 .single-recipe-info-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10%;
-    font-family: "Varela Round", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10%;
+  font-family: "Varela Round", sans-serif;
 }
 
 .single-recipe-info {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .single-recipe-link {
-    margin: auto;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 900;
-    font-size: 25px;
-    letter-spacing: 3px;
+  margin: auto;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 3px;
 }
 
 .single-recipe-link a {
-    text-decoration: none;
+  text-decoration: none;
 
-    color: rgb(4, 7, 6);
+  color: rgb(4, 7, 6);
 }
 
 .single-recipe-link a:hover {
-    color: lightgray;
+  color: lightgray;
 }
 
 .main-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 5fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 70px;
-    grid-row-gap: 20px;
-    padding-top: 5rem;
-    grid-template-columns: 35% 35%;
-    margin: auto;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 70px;
+  grid-row-gap: 20px;
+  padding-top: 5rem;
+  grid-template-columns: 35% 35%;
+  margin: auto;
+  justify-content: center;
 }
 
 .Subscribe-divider {
-    height: 100px;
-    width: 100%;
-    background-color: rgb(22, 127, 153);
-    display: flex;
-    color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(22, 127, 153);
+  display: flex;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .Subscribe-divider h1 {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 .Subscribe-divider .divider-icons {
-    color: white;
-    padding: 0.4rem;
-    font-size: 2rem;
+  color: white;
+  padding: 0.4rem;
+  font-size: 2rem;
 }
 
 .subsribe-box h1 {
-    display: flex;
+  display: flex;
 }
 
 .subsribe-box h2 {
-    text-transform: uppercase;
-}
-
-.subsribe-box h1 h3 {
-    font-family: "WindSong", cursive;
+  text-transform: uppercase;
 }
 
 .subscribe-form {
-    display: flex;
+  display: flex;
 }
 
 .subscribe-btn {
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid grey;
-    font-family: "Barlow Condensed", sans-serif;
-    width: 20%;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-family: "Barlow Condensed", sans-serif;
+  width: 20%;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
 .subsribe-field {
-    border: 1px solid grey;
-    border-radius: 5px;
-    height: 20px;
-    width: 35%;
-    padding: 6px 50px 6px 50px;
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-align: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 20px;
+  width: 35%;
+  padding: 6px 50px 6px 50px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .subsribe-box {
-    margin: auto;
+  margin: auto;
+}
+
+.follow-us {
+  display: flex;
+}
+
+.follow-us h3 {
+  font-family: "WindSong", cursive;
 }
 
 .slider-container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .Social-footer {
-    text-align: center;
-    padding-bottom: 4rem;
+  text-align: center;
+  padding-bottom: 4rem;
 }
 
 .social-footer-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-block hr {
-    margin-top: 1rem;
-    border-top: 1px solid rgb(55, 197, 233);
-    border-bottom: 1px solid rgb(43, 154, 182);
-    display: block;
-    width: 100%;
-    margin-right: auto;
+  margin-top: 1rem;
+  border-top: 1px solid rgb(55, 197, 233);
+  border-bottom: 1px solid rgb(43, 154, 182);
+  display: block;
+  width: 100%;
+  margin-right: auto;
 }
 
 .footer-link {
-    padding-top: 1rem;
-    width: 3rem;
+  padding-top: 1rem;
+  width: 3rem;
 }
 
 @media only screen and (max-width: 1000px) {
-    .menu-nav li a {
-        font-size: 20px;
-    }
-    .dropdown-btn {
-        font-size: 20px;
-    }
+  .menu-nav li a {
+    font-size: 20px;
+  }
+  .dropdown-btn {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .main-grid {
-        grid-template-columns: 100%;
-    }
-    .menu-nav {
-        display: none;
-    }
-    .single-recipe {
-        flex-direction: column;
-    }
-    .single-recipe-img {
-        margin: auto;
-        width: 300px !important;
-        padding-bottom: 25px;
-    }
+  .main-grid {
+    grid-template-columns: 100%;
+  }
+  .menu-nav {
+    display: none;
+  }
+  .single-recipe {
+    flex-direction: column;
+  }
+  .single-recipe-img {
+    margin: auto;
+    width: 300px !important;
+    padding-bottom: 25px;
+  }
 
-    .single-recipe-container {
-        max-width: 100%;
-        margin: auto;
-    }
-    .single-recipe-info-container {
-        justify-content: space-between;
-        margin-top: 0px;
-        margin-bottom: 5%;
-    }
+  .single-recipe-container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .single-recipe-info-container {
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 5%;
+  }
 }
 
 @media only screen and (min-width: 801px) {
-    .bm-burger-button {
-        display: none;
-    }
+  .bm-burger-button {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 510px) {
-    .rand-recipes img {
-        width: 250px;
-    }
-    .rand-recipes h1 {
-        font-size: 1rem;
-    }
+  .rand-recipes img {
+    width: 250px;
+  }
+  .rand-recipes h1 {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 712px) {
-    .footer-grid {
-        grid-template-columns: 100%;
-        padding: 2rem;
-        row-gap: 20px;
-    }
+  .footer-grid {
+    grid-template-columns: 100%;
+    padding: 2rem;
+    row-gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 1150px) {
-    .single-recipe-img {
-        width: 400px;
-    }
-    .single-recipe-img img {
-        width: 100%;
-    }
+  .single-recipe-img {
+    width: 400px;
+  }
+  .single-recipe-img img {
+    width: 100%;
+  }
 
-    .single-recipe-container h1 {
-        max-width: 100%;
-    }
-    .single-recipe-container h1 {
-        font-size: 20px;
-    }
+  .single-recipe-container h1 {
+    max-width: 100%;
+  }
+  .single-recipe-container h1 {
+    font-size: 20px;
+  }
 }
