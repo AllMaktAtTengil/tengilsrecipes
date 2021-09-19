@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import RecipeService from "../service/RecipeService";
 
 class RecipeInformation extends Component {
-  state = { singleRecipe: [] };
+  state = { singleRecipe: [], instructions: [], ingrediens: [] };
 
   async componentDidMount() {
     this.searchRecipe();
@@ -12,8 +12,17 @@ class RecipeInformation extends Component {
     let urlElement = window.location.pathname.split("/");
     urlElement = urlElement[2];
     const recipe = await RecipeService.getRecipeById(urlElement);
+
+    if (recipe.analyzedInstructions[0] !== undefined) {
+      const instruct = recipe.analyzedInstructions[0].steps;
+      this.setState({ instructions: instruct });
+    } else {
+    }
+
+    const ingredient = recipe.extendedIngredients;
     this.setState({
       singleRecipe: recipe,
+      ingrediens: ingredient,
     });
   };
 
@@ -48,6 +57,41 @@ class RecipeInformation extends Component {
                 See full recipe!
               </a>
             </div>
+          </div>
+        </div>
+        <div className="single-info-box">
+          <div>
+            <h2>Ingredients</h2>
+            {this.state.ingrediens &&
+              this.state.ingrediens.map((ingredient, index) => (
+                <div className="single-ingredient" key={index}>
+                  <ul>
+                    <li>{ingredient.original}</li>
+                  </ul>
+                </div>
+              ))}
+          </div>
+          <div className="single-instruction">
+            {this.state.instructions.length === 0 ? (
+              <div>
+                <h2>No instructions found</h2>
+              </div>
+            ) : (
+              <div>
+                <h2>Instructions</h2>
+              </div>
+            )}
+            {this.state.instructions.length !== 0 ? (
+              this.state.instructions &&
+              this.state.instructions.map((instruction, index) => (
+                <div className="single-step" key={index}>
+                  <p id="number">{index + 1}</p>
+                  <p>: {instruction.step}</p>
+                </div>
+              ))
+            ) : (
+              <div></div>
+            )}
           </div>
         </div>
       </div>

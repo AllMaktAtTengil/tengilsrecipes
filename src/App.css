@@ -415,6 +415,31 @@ h4 {
   color: lightgray;
 }
 
+.single-info-box h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  letter-spacing: 3px;
+  text-decoration: underline;
+  margin: 3% 0% 1% 14%;
+}
+
+.single-instruction p {
+  color: black;
+}
+
+.single-step {
+  margin: 2% 10% 0% 14%;
+}
+
+#number {
+  font-weight: bold;
+}
+
+.single-ingredient {
+  margin: 0% 10% 0% 15%;
+}
+
 .main-grid {
   display: grid;
   grid-template-columns: repeat(2, 5fr);
@@ -575,6 +600,9 @@ h4 {
   }
   .rand-recipes h1 {
     font-size: 1rem;
+  }
+  .single-info-box h2 {
+    font-size: 25px;
   }
 }
 
