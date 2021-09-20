@@ -57,7 +57,9 @@ class Dropdown extends Component {
                   </Link>
                 </li>
                 <li>
-                  <a href="#Dw">DW's Favorites</a>
+                  <Link to={`/dw`}>
+                    <p>DW's Favorites</p>
+                  </Link>
                 </li>
               </ul>
             </div>

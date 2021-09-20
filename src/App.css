@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Allison&family=Barlow+Condensed:wght@100&family=WindSong&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 
 * {
   margin: 0;
@@ -253,6 +254,38 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .joke-container h2 {
   font-style: italic;
+}
+
+.vampire {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.vampire h1 {
+  color: red;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-family: "Creepster", cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.vampire img {
+  border-radius: 25px;
+}
+
+.dw img {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-radius: 600px;
+  width: 400px;
+  height: 400px;
+  filter: brightness(1.5);
 }
 
 .footer {
