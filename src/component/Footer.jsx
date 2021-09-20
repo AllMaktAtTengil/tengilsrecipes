@@ -4,6 +4,7 @@ import "../App.css";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
 import { GrPinterest } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
   render() {
@@ -16,14 +17,14 @@ class Footer extends Component {
                 <h6>Recipes</h6>
                 <hr />
                 <span className="footer-social-icon"></span>{" "}
-                <a href="#Trending" className="footer-link">
-                  Most Popular
-                </a>
+                <Link to={`/raiting/popularity`}>
+                  <p className="footer-link">Most Popular</p>
+                </Link>
                 <br />
                 <span className="footer-social-icon"></span>{" "}
-                <a href="#Toprated" className="footer-link">
-                  Best Rated
-                </a>
+                <Link to={`/raiting/meta-score`}>
+                  <p className="footer-link">Best Rated</p>
+                </Link>
                 <br />
               </div>
               <div className="grid-2">

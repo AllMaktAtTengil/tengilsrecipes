@@ -280,6 +280,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-family: "Barlow Condensed", sans-serif;
 }
 
+.container .footer-block p {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(55, 197, 233);
+  font-family: "Barlow Condensed", sans-serif;
+}
+
 .container .footer-copyright {
   text-align: center;
 }

@@ -6,6 +6,7 @@ import Footer from "./component/Footer.jsx";
 import RecipeService from "./service/RecipeService";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RecipeInformation from "./component/RecipeInformation";
+import metaScore from "./component/metaScore";
 
 export default class App extends Component {
   state = { recipes: undefined };
@@ -24,13 +25,6 @@ export default class App extends Component {
     });
   };
 
-  getCustomRecipe = async (recipe) => {
-    const recipes = await RecipeService.getRecipeByPopularity(recipe);
-    this.setState({
-      recipes: recipes,
-    });
-  }
-
   render() {
     return (
       <Router>
@@ -38,6 +32,7 @@ export default class App extends Component {
           <Header parentFetch={this.searchRecipe} />
 
           <Switch >
+            <Route path="/raiting/:1" component={metaScore}></Route>
             <Route path="/recipe-information/:1" component={RecipeInformation}></Route>
             <Route path="/"> {this.state.recipes && <MainContent data={this.state.recipes} />} </Route>
           </Switch>

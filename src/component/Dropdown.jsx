@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 class Dropdown extends Component {
@@ -46,10 +47,14 @@ class Dropdown extends Component {
             <div className="dropdown">
               <ul>
                 <li>
-                  <a href="#bestRating">Best rating</a>
+                  <Link to={`/raiting/meta-score`}>
+                    <p>Best raiting</p>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#Popular">Popular</a>
+                  <Link to={`/raiting/popularity`}>
+                    <p>Popular</p>
+                  </Link>
                 </li>
                 <li>
                   <a href="#Dw">DW's Favorites</a>
