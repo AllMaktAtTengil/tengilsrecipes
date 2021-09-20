@@ -2,6 +2,7 @@ import React from "react";
 import { Component } from "react";
 import "../App.css";
 import { AiFillLike } from "react-icons/ai";
+import { GiWheat } from "react-icons/gi";
 import Slider from "./Slider";
 import { Link } from "react-router-dom";
 import Subscribe from "./Subscribe";
@@ -42,7 +43,15 @@ class MainContent extends Component {
                       <div className="rand-recipes" id={`recipe-box-${index}`}>
                         <Link to={`/recipe-information/${recipes.id}`}>
                           <h1>{recipes.title}</h1>
-                          <img src={recipes.image} alt="example" />
+                          {recipes.image === undefined ? (
+                            <img
+                              src="https://www.corepixel.se/pub_images/original/No-image-available.jpg"
+                              alt="example"
+                              style={{ width: "230px", height: "230px" }}
+                            />
+                          ) : (
+                            <img src={recipes.image} alt="example" />
+                          )}
                         </Link>
                         <div className="dish-info">
                           <p>{recipes.readyInMinutes}Min</p>
@@ -58,17 +67,27 @@ class MainContent extends Component {
                     </div>
                   ))
                 : recipes.results &&
-                  recipes.results.map((recipes, index) => (
+                  recipes.results.map((recipe, index) => (
                     <div key={index}>
                       <div className="rand-recipes" id={`recipe-box-${index}`}>
-                        <Link to={`/recipe-information/${recipes.id}`}>
-                          <h1>{recipes.title}</h1>
-                          <img src={recipes.image} alt="example" />
+                        <Link to={`/recipe-information/${recipe.id}`}>
+                          <div className="rand-recipes-title">
+                            <h1>{recipe.title}</h1>
+                            {recipe.glutenFree === true ? (
+                              <GiWheat
+                                style={{ color: "black", marginLeft: "10px" }}
+                              />
+                            ) : (
+                              <p></p>
+                            )}
+                          </div>
+
+                          <img src={recipe.image} alt="example" />
                         </Link>
                         <div className="dish-info">
-                          <p>{recipes.readyInMinutes}Min</p>
+                          <p>{recipe.readyInMinutes}Min</p>
                           <h4>
-                            Likes : {recipes.aggregateLikes}
+                            Likes : {recipe.aggregateLikes}
                             <AiFillLike />
                           </h4>
                         </div>
@@ -79,7 +98,9 @@ class MainContent extends Component {
                     </div>
                   ))}
             </div>
-            <Subscribe />
+            <div id="subscribe-div">
+              <Subscribe />
+            </div>
             <div className="slider">
               {this.state.recipes && <Slider data={this.state.recipes} />}
             </div>

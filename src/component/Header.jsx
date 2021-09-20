@@ -32,7 +32,7 @@ class Header extends Component {
                   <a href="#guides">Guides</a>
                 </li>
                 <li>
-                  <a href="#subscribe">Subscribe</a>
+                  <a href="#subscribe-div">Subscribe</a>
                 </li>
                 <li className="search-box">
                   <Searchbar multiParentFetch={this.props.parentFetch} />

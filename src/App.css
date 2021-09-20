@@ -506,6 +506,11 @@ h4 {
   text-align: center;
 }
 
+.rand-recipes-title {
+  display: flex;
+  justify-content: center;
+}
+
 .subsribe-box {
   margin: auto;
 }
@@ -559,6 +564,18 @@ h4 {
     padding: 1px 40px 1px 40px;
     font-size: 1rem;
   }
+
+  .joke-container {
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+  .joke-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .joke-container h2 {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -592,6 +609,10 @@ h4 {
   .bm-burger-button {
     display: none;
   }
+
+  .bm-menu-wrap {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 510px) {
@@ -603,6 +624,22 @@ h4 {
   }
   .single-info-box h2 {
     font-size: 25px;
+  }
+  .single-info-box p,
+  li {
+    font-size: 13px;
+  }
+
+  .Subscribe-divider .divider-icons {
+    display: none;
+  }
+
+  .follow-us {
+    display: none;
+  }
+
+  .subsribe-box {
+    margin-right: 20%;
   }
 }
 

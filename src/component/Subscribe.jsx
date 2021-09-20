@@ -3,6 +3,11 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
 import { GrPinterest } from "react-icons/gr";
 class Subscribe extends Component {
+  handleSubmit = (e) => {
+    alert("Successfully subscribed to our newsletter!");
+    e.preventDefault();
+  };
+
   render() {
     return (
       <div className="Subscribe-divider">
@@ -31,10 +36,10 @@ class Subscribe extends Component {
         </div>
         <div className="subsribe-box">
           <h2>Subscribe to our newsletter</h2>
-          <form className="subscribe-form">
+          <form className="subscribe-form" onSubmit={this.handleSubmit}>
             <input
               className="subsribe-field"
-              type="text"
+              type="email"
               placeholder="Email"
             ></input>
             <button className="subscribe-btn" type="submit">

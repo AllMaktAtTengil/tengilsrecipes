@@ -14,6 +14,7 @@ class Slider extends Component {
             type: "loop",
             rewind: true,
             width: "100%",
+            pagination: false,
             gap: "1rem",
             perPage: 3,
             breakpoints: {
@@ -26,22 +27,39 @@ class Slider extends Component {
             },
           }}
         >
-          {recipes.recipes &&
-            recipes.recipes.slice(6, 12).map((recipe, index) => (
-              <SplideSlide key={index}>
-                <div key={index}>
-                  <div className="rand-recipes" id={`recipe-box-${index}`}>
-                    <Link to={`/recipe-information/${recipe.id}`}>
-                      <h1>{recipe.title}</h1>
-                      <img src={recipe.image} alt="example" />
-                    </Link>
-                    <div className="dish-info">
-                      <p>{recipe.readyInMinutes}Min</p>
+          {!recipes.results
+            ? recipes.recipes &&
+              recipes.recipes.slice(6, 12).map((recipe, index) => (
+                <SplideSlide key={index}>
+                  <div key={index}>
+                    <div className="rand-recipes" id={`recipe-box-${index}`}>
+                      <Link to={`/recipe-information/${recipe.id}`}>
+                        <h1>{recipe.title}</h1>
+                        <img src={recipe.image} alt="example" />
+                      </Link>
+                      <div className="dish-info">
+                        <p>{recipe.readyInMinutes}Min</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </SplideSlide>
-            ))}
+                </SplideSlide>
+              ))
+            : recipes.results &&
+              recipes.results.slice(0, 10).map((recipe, index) => (
+                <SplideSlide key={index}>
+                  <div key={index}>
+                    <div className="rand-recipes" id={`recipe-box-${index}`}>
+                      <Link to={`/recipe-information/${recipe.id}`}>
+                        <h1>{recipe.title}</h1>
+                        <img src={recipe.image} alt="example" />
+                      </Link>
+                      <div className="dish-info">
+                        <p>{recipe.readyInMinutes}Min</p>
+                      </div>
+                    </div>
+                  </div>
+                </SplideSlide>
+              ))}
         </Splide>
       </div>
     );

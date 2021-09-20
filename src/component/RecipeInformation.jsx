@@ -31,7 +31,15 @@ class RecipeInformation extends Component {
       <div className="single-container">
         <div className="single-recipe">
           <div className="single-recipe-img">
-            <img src={this.state.singleRecipe.image} alt="not found" />
+            {this.state.singleRecipe.image === undefined ? (
+              <img
+                src="https://www.corepixel.se/pub_images/original/No-image-available.jpg"
+                alt="example"
+                style={{ width: "350px", height: "300px" }}
+              />
+            ) : (
+              <img src={this.state.singleRecipe.image} alt="not found" />
+            )}
           </div>
           <div className="single-recipe-container">
             <h1>{this.state.singleRecipe.title}</h1>
