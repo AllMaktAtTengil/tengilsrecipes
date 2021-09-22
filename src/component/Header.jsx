@@ -4,6 +4,8 @@ import "../App.css";
 import Searchbar from "../component/Searchbar";
 import Dropdown from "./Dropdown";
 import Hamburger from "./Hamburger";
+import { Link } from "react-router-dom";
+import ContactUs from "./ContactUs";
 
 class Header extends Component {
     render() {
@@ -29,7 +31,9 @@ class Header extends Component {
                                     <Dropdown />
                                 </li>
                                 <li>
-                                    <a href="#guides">Guides</a>
+                                    <Link to={`/contact`}>
+                                        <p>Contact</p>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a href="#subscribe-div">Subscribe</a>

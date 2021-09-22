@@ -139,6 +139,19 @@ body {
     color: lightgray;
 }
 
+.menu-nav li p {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Barlow Condensed", sans-serif;
+    text-decoration: none;
+    color: rgb(4, 7, 6);
+    text-transform: uppercase;
+}
+
+.menu-nav li p:hover {
+    color: lightgray;
+}
+
 .search-field {
     border: 1px solid grey;
     border-radius: 5px;
@@ -205,15 +218,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-    background: #373a47;
+    background: #0899bd;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
     z-index: 1;
+    border-radius: 25%;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-    fill: #373a47;
+    display: none;
 }
 
 /* Wrapper for item list */
@@ -240,7 +254,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .mobile-nav a {
     color: white;
+    font-family: "Barlow Condensed", sans-serif;
 }
+
+.mobile-nav p {
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
 .mobile-nav a:hover {
     color: lightgray;
     font-size: 20px;
@@ -496,6 +517,28 @@ h4 {
     padding-bottom: 5rem;
 }
 
+.contact-container {
+    display: flex;
+    height: 600px;
+}
+
+.contact-box {
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+
+.contact-box h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.contact-form .contact-area {
+    font-family: "Barlow Condensed", sans-serif;
+    width: 100%;
+}
+
 /* ------> FOOTER */
 
 .footer {
@@ -609,6 +652,11 @@ h4 {
     .menu-nav li a {
         font-size: 20px;
     }
+
+    .menu-nav li p {
+        font-size: 20px;
+    }
+
     .dropdown-btn {
         font-size: 20px;
     }
@@ -668,6 +716,10 @@ h4 {
 }
 
 @media only screen and (max-width: 510px) {
+    .contact-container .contact-box h1 {
+        font-size: 1.6rem;
+    }
+
     .rand-recipes img {
         width: 250px;
     }

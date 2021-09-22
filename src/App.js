@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RecipeInformation from "./component/RecipeInformation";
 import metaScore from "./component/metaScore";
 import Dw from "./component/Dw";
+import ContactUs from "./component/ContactUs";
 
 export default class App extends Component {
     state = { recipes: undefined };
@@ -33,6 +34,7 @@ export default class App extends Component {
                     <Header parentFetch={this.searchRecipe} />
 
                     <Switch>
+                        <Route path="/contact" component={ContactUs}></Route>
                         <Route path="/dw" component={Dw}></Route>
                         <Route path="/raiting/:1" component={metaScore}></Route>
                         <Route path="/recipe-information/:1" component={RecipeInformation}></Route>
