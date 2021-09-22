@@ -1,4 +1,9 @@
 class RecipeService {
+    /**
+     * fetches random joke from api
+     * @returns json-text.
+     */
+
     getRandomJoke = async () => {
         const apikey = process.env.REACT_APP_APIKEY;
 
@@ -11,7 +16,12 @@ class RecipeService {
         }
     };
 
-    getAll = async () => {
+    /**
+     * fetches 12 random recipe objects.
+     * @returns list of objects
+     */
+
+    getRandom = async () => {
         const apikey = process.env.REACT_APP_APIKEY;
 
         try {
@@ -22,6 +32,12 @@ class RecipeService {
             alert(error);
         }
     };
+
+    /**
+     *
+     * @param {*} index takes an varibale from searchbar.
+     * @returns specified list of that object.
+     */
 
     getRecipeByIndex = async (index) => {
         const apikey = process.env.REACT_APP_APIKEY;
@@ -37,6 +53,12 @@ class RecipeService {
         }
     };
 
+    /**
+     * Sorted list by either best rated or most likes.
+     * @param {*} index takes a let with either popularity or meta-score
+     * @returns a sorted list of objects.
+     */
+
     getRecipeByCustom = async (index) => {
         const apikey = process.env.REACT_APP_APIKEY;
         try {
@@ -49,7 +71,13 @@ class RecipeService {
         } catch (error) {
             alert(error);
         }
-    }
+    };
+
+    /**
+     *
+     * @param {*} id takes ID number
+     * @returns list of specified object.
+     */
 
     getRecipeById = async (id) => {
         const apikey = process.env.REACT_APP_APIKEY;
